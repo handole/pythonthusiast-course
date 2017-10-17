@@ -1,0 +1,14 @@
+{%extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+  <h1>{{ instance.name }}</h1>
+  {% if instance.image %}
+  <img src="{{ instance.image.url }}" class="img-response" weight="300px"/>
+  {% endif %}
+  <p>Value 		: {{ instance.value }}</p>
+  <p>Location 	: {{ instance.location }}</p>
+
+
+{% endblock %}

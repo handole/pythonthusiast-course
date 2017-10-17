@@ -1,0 +1,13 @@
+h1, h3 {
+  color: green;
+  font-weight: bold;
+  position: center;
+}
+p {
+	color: brown;
+}
+
+body{
+  background: url(../img/brand-bg.jpg) no-repeat center center;
+  background-size: cover;
+}

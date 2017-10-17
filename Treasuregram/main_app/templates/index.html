@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+
+<main class="container container--mw700" role="main">
+    <div class="row">
+      {% for obj in object_list %}
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+	        <h3><a href="{{ obj.get_absolute_url }}">{{ obj.name }}</a></h3>
+          </div>
+          <div class="panel-body">
+            <div class="treasure-photo">
+              <img src="{{ obj.image.url }}" class="img-response" width="200px"/> 
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </main>
+
+{% endblock content %}
